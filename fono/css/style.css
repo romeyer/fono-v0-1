@@ -445,6 +445,8 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 4em 0;
   clear: both; }
 
+.colorlib-about{background: whitesmoke}
+
 .colorlib-search {
   clear: both; }
   .colorlib-search .search-wrap {
