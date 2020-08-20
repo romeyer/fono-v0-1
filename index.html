@@ -8,7 +8,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<meta name="author" content="" />
-<!-- 		<script src="js/app.js"></script> -->
+
 		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
 		
 		<!-- Animate.css -->
@@ -41,14 +41,16 @@
 
 		<!-- Modernizr JS -->
 		<script src="fono/js/modernizr-2.6.2.min.js"></script>
-		
+
+		<!-- JS fono -->
+		<script src="js/fono.js"></script>
 	</head>
 	<body>
 		
 	<div class="colorlib-loader"></div>
 
 	<div id="page">
-		<nav class="colorlib-nav" role="navigation">
+		<nav class="colorlib-nav --fixed-menu" role="navigation">
 			<div class="upper-menu" style="background: #00acf1;">
 				<div class="container">
 					<div class="row">
@@ -64,14 +66,14 @@
 			<div class="top-menu">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-1">
 							<div id="colorlib-logo">
 								<a href="index.html">
-									<img src="img/logo-grafia-branco.png" alt="FonoAudialogo Logo" aria-roledescription="logo" style="max-width: 40px; margin-right: 10px;"><span class="page-logo-text mr-1">FonoAudiálogo</span>
+									<img src="img/logo-grafia-branco.png" alt="FonoAudialogo Logo" aria-roledescription="logo" style="max-width: 50px; margin-right: 10px;"><!-- <span class="page-logo-text mr-1">FonoAudiálogo</span>-->
 								</a>
 							</div>
 						</div>
-						<div class="col-md-8 text-right menu-1">
+						<div class="col-md-10 text-center menu-1">
 							<ul>
 								<li class="active"><a href="index.html" style="font-size: 1.45rem;">Home</a></li>
 								<li><a href="fono/quem-somos.html" style="font-size: 1.45rem;">Quem Somos</a></li>
@@ -83,13 +85,28 @@
 										<li><a href="fono/cursos.html" style="font-size: 1.45rem;">Categoria 2</a></li>
 										<li><a href="fono/cursos.html" style="font-size: 1.45rem;">Categoria 3</a></li>
 										<li><a href="fono/cursos.html" style="font-size: 1.45rem;">Categoria 4</a></li>
+										<li><a href="fono/cursos.html" style="font-size: 1.45rem;">Categoria 5</a></li>
+										<li><a href="fono/cursos.html" style="font-size: 1.45rem;">Categoria 6</a></li>
+										<li><a href="fono/cursos.html" style="font-size: 1.45rem;">Categoria 7</a></li>
+										<li><a href="fono/cursos.html" style="font-size: 1.45rem;">Categoria 8</a></li>
 									</ul>
 								</li>
+								<li class="has-dropdown">
+									<a href="fono/pos-graduacao.html" style="font-size: 1.45rem;">Pós-Graduação</a>
+									<ul class="dropdown">
+										<li><a href="fono/cursos.html" style="font-size: 1.45rem;">Categoria 1</a></li>
+										<li><a href="fono/cursos.html" style="font-size: 1.45rem;">Categoria 2</a></li>
+										<li><a href="fono/cursos.html" style="font-size: 1.45rem;">Categoria 3</a></li>
+									</ul>
+								</li>
+								<li><a href="fono/como-funciona.html" style="font-size: 1.45rem;">Contato</a></li>
+
 								<li><a href="login.html" style="font-size: 1.45rem;">Login</a></li>
 								
 								<li class="btn-cta"><a href="register.html"><span style="font-size: 1.45rem;">CADASTRE-SE</span></a></li>
 							</ul>
 						</div>
+						<div class="col-md-1"></div>
 					</div>
 				</div>
 			</div>
@@ -561,6 +578,57 @@
 	<!-- Main -->
 	<script src="fono/js/main.js"></script>
 
+	<script type="text/javascript">
+		window.onscroll = function(){
+
+				var menu = $(".--fixed-menu")[0];
+
+					var x = $('.--removeMe');
+					if(x.length){
+						x = x[0];
+					} else {
+						x = false;
+					}
+
+
+				    if (inPage(menu)){
+
+				    	if(!x){return}
+
+				    	$('.--removeMe')[0].parentElement.removeChild($('.--removeMe')[0]);
+					
+
+				    } else {
+
+				    	if(x){return}
+				    	
+				    	var newMenu = menu.cloneNode(true);
+
+				    	newMenu.style.position 	 = 'fixed';
+				    	newMenu.style.top 	   	 = 0;
+				    	newMenu.style.left 	   	 = 0;
+				    	newMenu.style.background = '#00acf1'; 
+				    	$(newMenu).removeClass('--fixed-menu');
+				    	$(newMenu).addClass('--removeMe');
+				    	$('body')[0].append(newMenu);
+
+				    	$('.upper-menu', newMenu)[0].style.display 	= 'none';
+				    	$('.top-menu', newMenu).animate({padding:'10px 0'}, 800);
+				    	$('img', newMenu).animate({maxWidth:'30px'});
+				    	$('span', newMenu)[0].style.background ='#006088';
+				    	$('.top-menu', newMenu).css({
+				    		'-webkit-box-shadow': '0px 15px 16px -6px rgba(0, 0, 0, 0.16)',
+						    '-moz-box-shadow': '0px 15px 16px -6px rgba(0, 0, 0, 0.16)',
+						    'box-shadow': '0px 15px 16px -6px rgba(0, 0, 0, 0.16)'
+				    	});
+			        
+					}
+
+			    }
+			 	
+
+
+	</script>
 	</body>
 </html>
 
