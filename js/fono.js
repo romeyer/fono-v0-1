@@ -1,3 +1,6 @@
 var inPage = function(el) {
-            return (window.scrollY <= el.getBoundingClientRect().top && el.getBoundingClientRect().top >= 0) 
-        }
+    let
+    e = el.getBoundingClientRect()
+    , y = e.top + e.height;
+    return window.scrollY <= y ? { top: y} : false
+}

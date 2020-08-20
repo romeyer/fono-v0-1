@@ -579,52 +579,42 @@
 	<script src="fono/js/main.js"></script>
 
 	<script type="text/javascript">
+		var 
+		menu = $(".--fixed-menu")[0];
 		window.onscroll = function(){
-
-				var menu = $(".--fixed-menu")[0];
-
-					var x = $('.--removeMe');
-					if(x.length){
-						x = x[0];
-					} else {
-						x = false;
-					}
-
-
-				    if (inPage(menu)){
-
-				    	if(!x){return}
-
-				    	$('.--removeMe')[0].parentElement.removeChild($('.--removeMe')[0]);
+				var
+				x = $('.--removeMe');
+				if(x.length) x = x[0];
+				else x = false;
+				if (inPage(menu)){
+					if(!x) return;
+					$('.--removeMe')[0].parentElement.removeChild($('.--removeMe')[0]);
+				} else {
+					if(x) return;
+					var
+					newMenu = menu.cloneNode(true);
+					$(newMenu).css({
+						position 	 : 'fixed'
+						, top 	   	 : 0
+						, left 	   	 : 0
+						, background : '#00acf1'
+					})
+					$(newMenu).toggleClass('--fixed-menu --removeMe')
 					
+					$('body')[0].append(newMenu);
+					$('.upper-menu', newMenu)[0].style.display 	= 'none';
+					$('.top-menu', newMenu).animate({padding:'10px 0'}, 400);
+					$('img', newMenu).animate({maxWidth:'30px'});
+					$('span', newMenu)[0].style.background ='#006088';
+					$('.top-menu', newMenu).css({
+						'-webkit-box-shadow': '0px 15px 16px -6px rgba(0, 0, 0, 0.16)',
+						'-moz-box-shadow': '0px 15px 16px -6px rgba(0, 0, 0, 0.16)',
+						'box-shadow': '0px 15px 16px -6px rgba(0, 0, 0, 0.16)'
+					});
+				
+				}
 
-				    } else {
-
-				    	if(x){return}
-				    	
-				    	var newMenu = menu.cloneNode(true);
-
-				    	newMenu.style.position 	 = 'fixed';
-				    	newMenu.style.top 	   	 = 0;
-				    	newMenu.style.left 	   	 = 0;
-				    	newMenu.style.background = '#00acf1'; 
-				    	$(newMenu).removeClass('--fixed-menu');
-				    	$(newMenu).addClass('--removeMe');
-				    	$('body')[0].append(newMenu);
-
-				    	$('.upper-menu', newMenu)[0].style.display 	= 'none';
-				    	$('.top-menu', newMenu).animate({padding:'10px 0'}, 800);
-				    	$('img', newMenu).animate({maxWidth:'30px'});
-				    	$('span', newMenu)[0].style.background ='#006088';
-				    	$('.top-menu', newMenu).css({
-				    		'-webkit-box-shadow': '0px 15px 16px -6px rgba(0, 0, 0, 0.16)',
-						    '-moz-box-shadow': '0px 15px 16px -6px rgba(0, 0, 0, 0.16)',
-						    'box-shadow': '0px 15px 16px -6px rgba(0, 0, 0, 0.16)'
-				    	});
-			        
-					}
-
-			    }
+			}
 			 	
 
 
