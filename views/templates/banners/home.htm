@@ -1,0 +1,38 @@
+<template>
+    <div 
+        class="--home-banner -absolute -zero -wrapper" 
+        style="background-position: center center; background-size: cover;background-image:url('@BANNERCOVER');color:@BACKGROUND;opacity:0;display:none">
+        <blur style="opacity:0;display:none"></blur>
+        <div class="-relative -wrapper"">
+            <div 
+                class="-absolute -content-left" 
+                style="top:50%;left:0;transform:translate(20vw, -50%)">
+                <span style="opacity:.64">@SUBTITLE</span><br/>
+                <div style="font-size:2em;padding:.25em 0">@MAINTITLE</div><br/>
+                <div 
+                    class="-only-pointer -inline --link" 
+                    style="padding:.5em .5em .25em .5em;border-radius:2em;background:@SPAN;transform:translateX(-.5em)" 
+                    onclick="window.app.error('@CLICKLINK')"
+                    onmouseenter="this.stop().anime({ background:'@STRONG' })"
+                    onmouseleave="this.stop().anime({ background:'@SPAN' })">
+                    <img src="img/icons/play.svg" class="-left -inverted" style="height:2.5em;"/>
+                    <span class="-left" style="padding:.75em 2em .75em .5em;transform:translateY(-.1em)">COMECE SEUS ESTUDOS!</span>
+                </div>
+            </div>
+        </div>
+        <div class="-absolute -zero-br -pointer" style="padding:1em 2em">
+            <img src="img/icons/eye-cross.svg" class="-inverted" style="height:1.5em;" data-state="0" onclick="
+                if(this.dataset.state*1){
+                    this.src = 'img/icons/eye-cross.svg';
+                    $('.--home-banner blur').desappear();
+                    this.dataset.state = 0;
+                }else{
+                    this.src = 'img/icons/eye.svg';
+                    $('.--home-banner blur').appear(800);
+                    this.dataset.state = 1;
+                }
+
+            "/>
+        </div>
+    </div>
+</template>

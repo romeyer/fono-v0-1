@@ -1,0 +1,49 @@
+<template>
+
+    <div class="-relative -left -row">
+        <nav class="-absolute -col-6" style="top:0;left:50%;transform:translate(-50%, -50%);background:@BOXGROUND;color:@WHITE;padding:1em;box-shadow: 0 0 8em @DARK3">
+
+            <div class="-left -col-8" style="padding:1.5em .75em 1.5em 2em"  >
+                <input 
+                    type="text" 
+                    class="-row" 
+                    style="font-size:1em;padding:.75em 2em ;border:1px solid @LIGHT2;background:@LIGHT1;color:@WHITE;font-weight:bolder"
+                    placeholder="QUE CURSO PROCURA?">
+            </div>
+            <div 
+                class="-left -col-4 -only-pointer -inline"
+                style="padding:1.5em 2em 1.5em .75em">
+                <div 
+                    class="-row -conten-center" 
+                    style="border-radius:2em;background:@SPAN;padding:.75em;transform:translateY(-.1em)"
+                    onmouseenter="this.stop().anime({ background:'@STRONG' })"
+                    onmouseleave="this.stop().anime({ background:'@SPAN' })"
+                    onclick="window.SearchBarAction()">
+                    BUSCAR CURSO
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- STYLESHEET -->
+    <style>
+        .--search-bar input { text-transform: uppercase; }
+        .--search-bar input::placeholder { color: @LIGHT3;  }
+    </style>
+
+    <!-- SCRIPT -->
+    <script>
+        window
+        .SearchBarAction = NULL => {
+            const
+            input = $(".--search-bar input")[0]
+            , val = input.value;
+
+            input.value = "";
+            app.notify(val)
+        }
+        ;
+    </script>
+
+</template>

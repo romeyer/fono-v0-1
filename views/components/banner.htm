@@ -1,0 +1,62 @@
+<template>
+
+    <!-- STAGE -->
+    <div class="-relative -left -row --stage -no-scrolls" style="height:85vh;background:@FOREGROUND;"></div>
+    <nav class="-relative -left -row">
+        <div class="-absolute -flex --switchers" style="top:-8em;left:50%;transform:translateX(-50%)"></div>
+    </nav>
+
+    <!-- SCRIPT -->
+    <script>
+        var
+        BannerTemplate = null
+        , BannerTimerHandle = null
+        , BannerStage = $(".--banner .--stage")[0]
+        , BannerSwitchers = $(".--banner .--switchers")[0]
+        , BannerChanger = i => {
+            let
+            els = $(".--banner .--home-banner")
+            , len = els.length
+            ;
+            i = i && i > 0 ? i % len : 0;
+            els.each((e, j) => j==i ? e.appear() : e.desappear());
+            $(".-circle", BannerSwitchers).anime({ background:"@LIGHT3" })
+            $(".-circle", BannerSwitchers)[i].stop().anime({ background:"@WHITE" })
+            BannerTimerHandle = setTimeout(BannerChanger, 10000, i+1);
+        }
+        ;
+
+        Router.call("bannertemplate").then(T => {
+            BannerTemplate = T.data;
+            Router.call("bannerdata").then(data => {
+                data = data.data.json();
+                data.each(bannerdata => {
+                    let
+                    e = BannerTemplate.prepare(bind({
+                        BANNERCOVER: API_HOSTNAME + bannerdata.image 
+                        , SUBTITLE: bannerdata.subtitle || "subtitle"
+                        , MAINTITLE: bannerdata.maintitle || "main title"
+                        , CLICKLINK: bannerdata.clicklink || "click link"
+                    }, app.color_pallete))
+                    BannerStage.app(e.morph())
+                    BannerSwitchers.app(
+                        _("div", "-circle -pointer", { 
+                            padding:".5em"
+                            , background:"@LIGHT4"
+                            , border:"1px solid @WHITE44"
+                            , margin:".5em"
+                            , boxShadow:"0 0 .5em @DARK1"
+                        }).on("click", function(){
+                            if(BannerTimerHandle) clearInterval(BannerTimerHandle);
+                            BannerTimerHandle = null;
+                            BannerChanger(this.index()+1);
+                            console.log(this.index()+1);
+                        })
+                    )
+                })
+                BannerChanger(0);
+            })
+        })
+    </script>
+
+</template>

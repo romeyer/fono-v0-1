@@ -1,0 +1,72 @@
+<template>
+
+    <!-- TITLE -->
+    <div class="-row -content-center">
+        <b style="font-size:4em;opacity:.025">PRÓXIMOS CURSOS</b></br>
+        <div class="-roboto-bold" style="font-size:1.5em; transform:translateY(-1.5em)">PRÓXIMOS CURSOS</div>
+    </div>
+    
+    <!-- STAGE -->
+    <section class="-relative -left -row -no-scrolls -blck --stage" style="height:32em;background-image: radial-gradient(@DARK3, transparent, transparent);z-index:0"></section>
+
+    <!-- CURSORS -->
+    <nav class="-relative -left -row" style="z-index:10">
+        <div class="-absolute --courses-trigger -zero-bottom-left -col-4" style="height:32em;background-image:linear-gradient(to right, @FOREGROUND, transparent)">
+            <img src="img/icons/play.svg" class="-absolute -pointer -flip" style="top:calc(50% - 3em);left:0;height:3em;margin:2em"/>
+        </div>
+        <div class="-absolute --courses-trigger -zero-bottom-right -col-4" style="height:32em;background-image:linear-gradient(to left, @FOREGROUND, transparent)">
+            <img src="img/icons/play.svg" class="-absolute -pointer" style="top:calc(50% - 3em);right:0;height:3em;margin:2em"/>
+        </div>
+    </nav>
+
+    <!-- SCRIPT -->
+    <script>   
+    
+        const
+        Samples = 5
+        , OpenCourses = {}
+        , OCStage = $(".--open-courses .--stage").at()
+        , Reorder = dir => {
+            let
+            els = $(".-tile", OCStage)
+            ;
+            if(dir) OCStage.app(els.first()); else OCStage.prepend(els.last());
+            $(".--open-courses .--stage .-tile").each((x, j) => {
+                let
+                wid = window.innerWidth/Samples
+                , pace = wid * j;
+                x.anime({
+                    transform: j >= Samples ? "translateX("+(window.innerWidth/2)+"px)" : "translateX(" + ([ (pace+wid*.175), (pace+wid*.0375), pace, (pace-wid*.0375), (pace-wid*.175) ][j]) + "px) scale("+([ .8, .9, 1, .9, .8 ][j])+")"
+                    , opacity: j >= Samples ? 0 : 1
+                    , zIndex: j>=Samples ? 0 : [100, 110, 120, 111, 101 ][j]
+                })
+            })
+        }
+        ;
+
+        Router.call("opencoursestile").then(T => {
+            T = T.data;
+            Router.call("opencoursesdata").then(data => {
+                bind(OpenCourses, data.data.json());
+                OpenCourses.each((x, i) => {
+                    let
+                    e = T.prepare(bind({ 
+                        IMAGE:  API_HOSTNAME + "/var/courses_images/" + x.content.banner_imagem
+                        , NAME: x.content.banner_nome
+                        , TEXT: x.content.banner_texto
+                        , URL:  x.content.banner_url
+                    }, app.color_pallete)).morph()[0]
+                    OCStage.app(e);
+                });
+                Reorder(0);
+                // setTimeout(Reorder, ANIMATION_LENGTH, 0);
+            })
+        })
+
+        $(".--open-courses .--courses-trigger").each((x, i) => {
+            x.on("click", NULL => Reorder(i))
+        })
+        
+    </script>
+
+</template>

@@ -1,0 +1,73 @@
+<template>
+    <div class="-row" style="margin:8em 0;padding:8em 0; background:@STRONG;color:@WHITE">
+        
+        <!-- TITLE -->
+        <div class="-row -content-center">
+            <b style="font-size:4em;opacity:.05">PÓS GRADUAÇÂO</b></br>
+            <div class="-roboto-bold" style="font-size:1.5em; transform:translateY(-1.5em)">PÓS GRADUAÇÂO</div>
+        </div>
+        
+        <!-- STAGE -->
+        <section class="-left -row --stage" style="padding:6em;background-image: radial-gradient(@DARK3, transparent, transparent);z-index:0">
+            
+            <!-- ROW 1 -->
+            <div class="-row -flex">
+                <div class="-col-2"></div>
+                <div class="-col-8 --row">
+
+                </div>
+                <div class="-col-2"></div>
+            </div>
+            
+            <!-- ROW 2 -->
+            <div class="-row -flex">
+                <div class="-col-2"></div>
+                <div class="-col-8 --row">
+
+                </div>
+                <div class="-col-2"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script>   
+    
+        const
+        Samples = 3
+        , PostDegrees = Array()
+        , Stage = $(".--post-degrees .--stage").at()
+        , PostDegreeScrollFunction = NULL => {
+            let
+            el = $(".--post-degrees")[0];
+            if(el.inPage()){
+                $(".--post-degree-tile").each((x, i) => setTimeout(x => x.appear(ANIMATION_LENGTH), ANIMATION_LENGTH/2*i, x))
+                ScrollPool.drop(PostDegreeScrollFunction)
+            }
+            $(".--post-degrees")[0].appear()
+        }
+        ;
+        ScrollPool.add(PostDegreeScrollFunction);
+
+        Router.call("postdegreestile").then(T => {
+            T = T.data;
+            Router.call("postdegreesdata").then(data => {
+                data.data.json().each(x => PostDegrees.push(x));
+                if(!PostDegrees.length) return $(".--post-degrees")[0].desappear();
+                PostDegrees.each((x, i) => {
+                    if(i >= Samples * 2) return;
+                    let
+                    e = T.prepare(bind({ 
+                        IMAGE: API_HOSTNAME + "/var/courses_images/" + x.banner_imagem
+                        , NAME: x.banner_nome
+                        , TEXT: x.banner_texto
+                        , URL: x.banner_url
+                    }, app.color_pallete)).morph()[0].css({ opacity:0 })
+                    $(".--row", Stage)[i >= Samples ? 1 : 0].app(e);
+                })
+            })
+        })        
+    </script>
+
+</template>

@@ -1,0 +1,68 @@
+<template>
+
+    <div class="-relative -left -row -content-center" style="padding:8em 0">
+     
+        <!-- STAGE -->
+        <div class="-flex --stage"></div>
+        <div class="-row -content-center" style="margin-top:4em">
+            <div 
+                class="-only-pointer -inline --link" 
+                style="padding:.5em .5em .25em .5em;border-radius:2em;background:@SPAN;transform:translate(-.5em, 2em)" 
+                onclick="window.app.error('@CLICKLINK')"
+                onmouseenter="this.stop().anime({ background:'@STRONG' })"
+                onmouseleave="this.stop().anime({ background:'@SPAN' })">
+                <img src="img/icons/play.svg" class="-left -inverted" style="height:2.5em;"/>
+                <span class="-left" style="padding:.75em 2em .75em .5em;transform:translateY(-.1em);color:@WHITE">COMO FUNCIONA A FONOAUDIÁLOGO?</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- STYLE -->
+    <style>
+        .--category-tile:hover {
+            transform:translateY(-.25em);
+            box-shadow: 0 .5em 1em @DARK3; 
+        }
+    </style>
+
+    <!-- SCRIPT -->
+    <script>
+        var
+        CatTemplate = null
+        , CatStage = $(".--categories .--stage")[0]
+        , CategoriesScrollAction = NULL => {
+            if(window.scrollY < 100) return;
+            $(".--category-tile").each((x, i) => {
+                x.anime({ transition:"opacity(1)", transform:"translateY(0)" }, ANIMATION_LENGTH, ANIMATION_LENGTH/8*i);
+                ScrollPool.drop(CategoriesScrollAction);
+            });
+        }
+        ;
+        ScrollPool.add(CategoriesScrollAction);
+
+        Router.call("categorytile").then(T => {
+            CatTemplate = T.data;
+            Router.call("categoriesdata").then(data => {
+                data = data.data.json();
+                data.each(catdata => {
+                    let
+                    e = CatTemplate.prepare(bind({
+                        IMAGE: API_HOSTNAME + catdata.image
+                        , LABEL: catdata.label || "click link"
+                    }, app.color_pallete))
+                    CatStage.app(e.morph())
+                })
+                $(".--category-tile").each(e => {
+                    e.on("mouseenter", function(){
+                        $(".--category-tile").not(this).anime({ opacity:.4 });
+                        this.stop().anime({ opacity: 1 });
+                    }).on("mouseleave", function(){
+                        $(".--category-tile").stop().anime({ opacity:1 });
+                    })
+                })
+            })
+        })
+    </script>
+
+</template>
