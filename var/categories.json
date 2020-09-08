@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Atualização"
+        , "image":"var/categories_images/atualizacao.png"
+    }, 
+    {
+        "name": "Capacitação"
+        , "image":"var/categories_images/capacitacao.png"
+    }, 
+    {
+        "name": "Formação"
+        , "image":"var/categories_images/formacao.png"
+    }, 
+    {
+        "name": "Aprimoramento"
+        , "image":"var/categories_images/aprimoramento.png"
+    }, 
+    {
+        "name": "Pós-graduação"
+        , "image":"var/categories_images/pos_graduacao.png"
+    }, 
+    {
+        "name": "Videoaulas"
+        , "image":"var/categories_images/video_aulas.png"
+    }
+]
