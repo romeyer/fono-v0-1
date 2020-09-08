@@ -47,12 +47,12 @@
             ;
             if(window.scrollY < 100){
                 el.stop().anime({ transform: "translateY(0)" })
-                $("img", el)[0].stop().anime({ transform: "translateX(8em)" }).then(i => i.src = "img/icons/brand/iconw.png")
+                $("img", el)[0].stop().anime({ transform: "translateX(8em)" });//.then(i => i.src = "img/icons/brand/iconw.png")
                 $("div.-pointer", el)[0].stop().anime({ transform: "translateX(0)" })
                 $("header .--fixed-bar .-col-4").stop().anime({ opacity: 1 })
             } else {
                 el.stop().anime({ transform: "translateY(-4.25em)" })
-                $("img", el)[0].stop().anime({ transform: "translateX(0)" }).then(i => i.src = "img/logos/logow.png")
+                $("img", el)[0].stop().anime({ transform: "translateX(4em)" });//.then(i => i.src = "img/logos/logow.png")
                 $("div.-pointer", el)[0].stop().anime({ transform: "translateX(8em)" })
                 $("header .--fixed-bar .-col-4").stop().anime({ opacity: 0 })
             }

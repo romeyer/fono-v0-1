@@ -17,22 +17,22 @@ class _Router_Traits {
         , searchbar: "views/components/search-bar.htm"
         , categories: "views/components/categories.htm"
         , opencourses: "views/components/open-courses.htm"
-        , postdegree: "views/components/post-degree.htm"
-        , institutional: "views/components/institutional.htm"
+        , postdegree: "views/components/post-degrees.htm"
+        , maincourses: "views/components/main-courses.htm"
         , newsletter: "views/components/newsletter.htm"
 
         /* TEMPLATES */
         , bannertemplate: "views/templates/banners/home.htm"
         , categorytile: "views/templates/tiles/category.htm"
         , opencoursestile: "views/templates/tiles/open-course.htm"
-        , postdegreestile: "views/templates/tiles/post-degree.htm"
+        , maincoursestile: "views/templates/tiles/main-courses.htm"
 
         /* API CALLS */
         , theme: API_PREFIX + "themes/get/fono"
         , bannerdata: API_PREFIX + "home/banners"
         , categoriesdata: API_PREFIX + "home/categories"
         , opencoursesdata: API_PREFIX + "home/opencourses"
-        , postdegreesdata: API_PREFIX + "home/postdegrees"
+        , maincoursesdata: API_PREFIX + "home/maincourses"
         , stats: API_PREFIX + "home/stats"
 
     }

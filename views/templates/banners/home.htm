@@ -1,13 +1,15 @@
+
 <template>
     <div 
         class="--home-banner -absolute -zero -wrapper" 
         style="background-position: center center; background-size: cover;background-image:url('@BANNERCOVER');color:@BACKGROUND;opacity:0;display:none">
         <blur style="opacity:0;display:none"></blur>
+        <div style="background:@DARK3"></div>
         <div class="-relative -wrapper"">
             <div 
                 class="-absolute -content-left" 
                 style="top:50%;left:0;transform:translate(20vw, -50%)">
-                <span style="opacity:.64">@SUBTITLE</span><br/>
+                <span class="-col-8" style="font-size:1.25em;">@SUBTITLE</span><br/>
                 <div style="font-size:2em;padding:.25em 0">@MAINTITLE</div><br/>
                 <div 
                     class="-only-pointer -inline --link" 
@@ -21,15 +23,13 @@
             </div>
         </div>
         <div class="-absolute -zero-br -pointer" style="padding:1em 2em">
-            <img src="img/icons/eye-cross.svg" class="-inverted" style="height:1.5em;" data-state="0" onclick="
+            <img src="img/icons/eye-cross.svg" class="--eyes -inverted" style="height:1.5em;" data-state="0" onclick="
                 if(this.dataset.state*1){
-                    this.src = 'img/icons/eye-cross.svg';
+                    $('.--eyes').attr({ src: 'img/icons/eye-cross.svg', 'data-state':0 });
                     $('.--home-banner blur').desappear();
-                    this.dataset.state = 0;
                 }else{
-                    this.src = 'img/icons/eye.svg';
+                    $('.--eyes').attr({ src: 'img/icons/eye.svg', 'data-state': 1 });
                     $('.--home-banner blur').appear(800);
-                    this.dataset.state = 1;
                 }
 
             "/>

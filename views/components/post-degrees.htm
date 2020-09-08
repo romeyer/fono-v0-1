@@ -1,0 +1,86 @@
+<template>
+
+    <section class="-row -flex" style="background: @FOREGROUND;">
+        
+        <div class="-relative -left -col-2"></div>
+
+        <!-- MOSAIC -->
+        <div class="-relative -left -col-4" style="transform:translateX(-3em) scale(.6);">
+            <img src="https://localapi/var/institutional_images/about-img-2.jpg" class="-row" style="transform:scale(.9) translate(-20%, 20%);transform-origin:top left;z-index:2">
+            <img src="https://localapi/var/institutional_images/about-img-1.jpg" class="-row" style="transform:scale(.9) translate(10%, -20%);transform-origin:bottom right;z-index:1">
+        </div>
+        
+        <!-- CONTENT -->
+        <div class="-relative -left -col-4">
+            
+            <!-- TITLE -->
+            <div class="-row -content-center" style="padding:4em 0 0 4em">
+                <b style="font-size:4em;opacity:.05">PÓS GRADUAÇÃO</b></br>
+                <div class="-roboto-bold" style="font-size:1.5em; transform:translateY(-1.5em)">PÓS GRADUAÇÃO</div>
+                <div class="-left -row -content-left">
+                    <h2>Fonoaudiálogo + INSPIRAR</h2>
+                    <article>
+                        A Fonoaudiálogo e a Faculdade INSPIRAR uniram-se para oferecer a melhor estrutura em Pós-graduação semipresencial e presencial para fonoaudiólogos de todos o País.
+                    </article>
+
+                    <div class="-row -content-center" style="margin-top:4em">
+                        <div 
+                            class="-only-pointer -inline --link" 
+                            style="padding:.5em .5em .25em .5em;border-radius:2em;background:@SPAN;transform:translate(-.5em, 2em)" 
+                            onclick="window.app.error('@CLICKLINK')"
+                            onmouseenter="this.stop().anime({ background:'@STRONG' })"
+                            onmouseleave="this.stop().anime({ background:'@SPAN' })">
+                            <img src="img/icons/play.svg" class="-left -inverted" style="height:2.5em;"/>
+                            <span class="-left" style="padding:.75em 2em .75em .5em;transform:translateY(-.1em);color:@WHITE">COMO FUNCIONA A FONOAUDIÁLOGO?</span>
+                        </div>
+                    </div>
+<!--                     
+                    <div class="-flex -row -content-left" style="font-size:6em;color:@SPAN;margin-top:.75em">
+                        <b class="--n -col-6 -roboto-bold">00</b>
+                        <b class="--n -col-6 -roboto-bold">00</b>
+                    </div>
+                    <div class="-flex -row -content-left" style="color:@FONT">
+                        <div class="-col-6">CURSOS EXCLUSIVOS</div>
+                        <div class="-col-6">PROFESSORES</div>
+                    </div>
+                    <div class="-flex -row -content-left" style="font-size:6em;color:@SPAN;margin-top:.75em">
+                        <b class="--n -col-6 -roboto-bold">00</b>
+                        <b class="--n -col-6 -roboto-bold">00</b>
+                    </div>
+                    <div class="-flex -row -content-left" style="color:@FONT">
+                        <div class="-col-6">DIPLOMAS</div>
+                        <div class="-col-6">ALUNOS CADASTRADOS</div>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="-relative -left -col-2"></div>
+    
+    </section>
+
+    <script>
+        // const
+        // N = $(".--post-degrees .--n")
+        // , StatUpdater = function(x,limit,step,idx,timer){
+        //     if(x >= limit) return N[idx].text(limit.nerdify());
+        //     N[idx].text(x.nerdify());
+        //     setTimeout(StatUpdater, timer, x+step, limit, step, idx, timer);
+        // }
+        // Router.call("stats").then(stat => {
+        //     let indexes = ["courses", "professionals", "pupils", "passdegrees" ];
+        //     stat.data.json().extract((x, i) => {
+        //         const fn = NULL => {
+        //             if(!$(".--post-degrees").at().inPage()) return;
+        //             const
+        //             timer = ANIMATION_LENGTH*3/100;
+        //             setTimeout(StatUpdater, ANIMATION_LENGTH*(i+1), 0, x.content, x.content/100, indexes.indexOf(x.key), timer);
+        //             ScrollPool.drop(fn)    
+        //         }
+        //         ScrollPool.add(fn)
+        //     })
+        // })
+    </script>
+
+</template>

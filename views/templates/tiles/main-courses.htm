@@ -1,0 +1,12 @@
+<template>
+    <div class="-left  -col-3 -tile --post-degree-tile" style="height:22em;padding:.5em">
+        <div class="-wrapper -content-left" style="box-shadow:0 0 .75em @DARK3;background:@BACKGROUND;">
+            <div class="-row --image" style="height:50%;background-size:cover;background-position:center center;background-image:url('@IMAGE')"></div>
+            <div class="-row -roboto-bold" style="padding: 1em;color:@BLACK;font-weight:bolder"><b>@NAME</b></div>
+            <div class="-row" style="padding:0 1em;color:@BLACK88">@TEXT</div>
+            <div class="-absolute -row -zero-bottom -keep -pointer">
+                <img class="-right" style="margin:1em;height:1.5em;" src="img/icons/link.svg" onclick="console.log('@URL')"/>
+            </div>
+        </div>
+    </div>
+</template>

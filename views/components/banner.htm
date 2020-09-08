@@ -21,7 +21,7 @@
             i = i && i > 0 ? i % len : 0;
             els.each((e, j) => j==i ? e.appear() : e.desappear());
             $(".-circle", BannerSwitchers).anime({ background:"@LIGHT3" })
-            $(".-circle", BannerSwitchers)[i].stop().anime({ background:"@WHITE" })
+            $(".-circle", BannerSwitchers)[i].stop().anime({ background:"@SPAN" })
             BannerTimerHandle = setTimeout(BannerChanger, 10000, i+1);
         }
         ;
@@ -37,11 +37,12 @@
                         , SUBTITLE: bannerdata.subtitle || "subtitle"
                         , MAINTITLE: bannerdata.maintitle || "main title"
                         , CLICKLINK: bannerdata.clicklink || "click link"
+                        , BUTTONTEXT: bannerdata.buttontext || "go now"
                     }, app.color_pallete))
                     BannerStage.app(e.morph())
                     BannerSwitchers.app(
                         _("div", "-circle -pointer", { 
-                            padding:".5em"
+                            padding:".25em"
                             , background:"@LIGHT4"
                             , border:"1px solid @WHITE44"
                             , margin:".5em"
@@ -50,7 +51,6 @@
                             if(BannerTimerHandle) clearInterval(BannerTimerHandle);
                             BannerTimerHandle = null;
                             BannerChanger(this.index()+1);
-                            console.log(this.index()+1);
                         })
                     )
                 })

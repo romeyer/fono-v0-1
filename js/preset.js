@@ -11,21 +11,23 @@ bootloader.loaders = {
 };
 
 bootloader.loadComponents.add(function(){ 
-	Router.post("theme").then(theme => {
-		theme = theme.data.json();
-		if(theme) bind(app.color_pallete, theme);
-		
-		Router.load("home").then(nil => {
-			Router.load("head", null, $("#app > header")[0]);
-			Router.load("banner", null, $(".--banner")[0]);
-			Router.load("searchbar", null, $(".--search-bar")[0]);
-			Router.load("categories", null, $(".--categories")[0]);
-			Router.load("opencourses", null, $(".--open-courses")[0]);
-			Router.load("postdegree", null, $(".--post-degrees")[0]);
-			Router.load("institutional", null, $(".--institutional")[0]);
-			Router.load("newsletter", null, $(".--newsletter")[0]);
+	setTimeout(NULL => {
+		Router.call("theme").then(theme => {
+			theme = theme.data.json();
+			if(theme) bind(app.color_pallete, theme);
+			
+			Router.load("home").then(nil => {
+				Router.load("head", null, $("#app > header")[0]);
+				Router.load("banner", null, $(".--banner")[0]);
+				Router.load("searchbar", null, $(".--search-bar")[0]);
+				Router.load("categories", null, $(".--categories")[0]);
+				Router.load("opencourses", null, $(".--open-courses")[0]);
+				Router.load("postdegree", null, $(".--post-degrees")[0]);
+				Router.load("maincourses", null, $(".--main-courses")[0]);
+				Router.load("newsletter", null, $(".--newsletter")[0]);
+			})
 		})
-	})
+	}, 200)
 
 });
 

@@ -1,6 +1,6 @@
 <template>
 
-    <div class="-relative -left -row -content-center" style="padding:8em 0">
+    <div class="-relative -left -row -content-center" style="padding:8em 0;top:4em">
      
         <!-- STAGE -->
         <div class="-flex --stage"></div>
@@ -8,7 +8,6 @@
             <div 
                 class="-only-pointer -inline --link" 
                 style="padding:.5em .5em .25em .5em;border-radius:2em;background:@SPAN;transform:translate(-.5em, 2em)" 
-                onclick="window.app.error('@CLICKLINK')"
                 onmouseenter="this.stop().anime({ background:'@STRONG' })"
                 onmouseleave="this.stop().anime({ background:'@SPAN' })">
                 <img src="img/icons/play.svg" class="-left -inverted" style="height:2.5em;"/>
@@ -49,7 +48,7 @@
                     let
                     e = CatTemplate.prepare(bind({
                         IMAGE: API_HOSTNAME + catdata.image
-                        , LABEL: catdata.label || "click link"
+                        , LABEL: catdata.name
                     }, app.color_pallete))
                     CatStage.app(e.morph())
                 })
@@ -62,6 +61,10 @@
                     })
                 })
             })
+        })
+
+        $(".--categories .--link").at().on("click", NULL => {
+            app.window()
         })
     </script>
 

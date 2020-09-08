@@ -1,11 +1,15 @@
 <template>
-    <div class="-absolute -zero -tile" style="height:30em;margin:1em 0;width:20vw">
-        <div class="-wrapper -content-left" style="box-shadow:0 0 .75em @DARK3;background:@BACKGROUND;">
+    <div class="-absolute -zero -tile" style="height:18vw;margin:1em 0;width:20vw">
+        <div class="-wrapper -no-scrolls -content-left" style="border:1px solid @DARK2;background:@BACKGROUND;">
+            <div class="-row -absolute -zero --month" style="height:50%;background:@MONTHCOLOR;">
+                <div class="-absolute -centered" style="color:@WHITE44;font-size:2.5em;text-shadow:0 0 @DARK1">@MONTHTEXT</div>
+            </div>
             <div class="-row --image" style="height:50%;background-size:cover;background-position:center center;background-image:url('@IMAGE')"></div>
             <div class="-row -roboto-bold" style="padding: 1em;color:@BLACK;font-weight:bolder"><b>@NAME</b></div>
             <div class="-row" style="padding:0 1em;color:@BLACK88">@TEXT</div>
-            <div class="-absolute -row -zero-bottom -keep -pointer">
-                <img class="-right" style="margin:1em;height:1.5em;" src="img/icons/link.svg" onclick="console.log('@URL')"/>
+            <div class="-absolute -row -zero-bottom -keep" style="background:@BACKGROUND;box-shadow:0 -.5em .5em @DARK2">
+                <div class="-left" style="padding:1.15em;color:@DARK3"><span class="-left">R$</span><b class="-left"style="color:@SPAN;margin-left:.5em">@VALUE</b></div>
+                <img class="-right -pointer" style="margin:1em;height:1.5em;" src="img/icons/link.svg" onclick="console.log('@URL')"/>
             </div>
         </div>
     </div>
