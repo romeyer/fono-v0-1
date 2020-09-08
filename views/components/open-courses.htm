@@ -60,7 +60,9 @@
                         , VALUE: x.content.curso_investimento.nerdify()
                         , MONTHTEXT: date.join("/")
                         , MONTHCOLOR: "@STRONG"//app.prism.extract(x=>x.content)[date[1]*1]
-                    }, app.color_pallete)).morph()[0]
+                    }, app.color_pallete)).morph()[0].on("click", function(){
+                        app.error("ops! construíndo a página de cada curso... =}")
+                    })
                     OCStage.app(e);
                 });
 

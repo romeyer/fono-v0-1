@@ -1,14 +1,14 @@
 <template>
-    <div class="-row" style="margin:8em 0 0 0;padding:8em 0 0 0; background:@STRONG;color:@WHITE">
+    <div class="-row" style="padding:8em 0; background:@STRONG;color:@WHITE">
         
         <!-- TITLE -->
         <div class="-row -content-center">
-            <b style="font-size:4em;opacity:.05">PÓS GRADUAÇÂO</b></br>
-            <div class="-roboto-bold" style="font-size:1.5em; transform:translateY(-1.5em)">PÓS GRADUAÇÂO</div>
+            <b style="font-size:4em;opacity:.05">CURSOS EM DESTAQUE</b></br>
+            <div class="-roboto-bold" style="font-size:1.5em; transform:translateY(-1.5em)">GARANTA SUA VAGA</div>
         </div>
         
         <!-- STAGE -->
-        <section class="-left -row --stage" style="padding:6em;background-image: radial-gradient(@DARK3, transparent, transparent);z-index:0">
+        <section class="-left -row --stage" style="padding:2em;background-image: radial-gradient(@DARK3, transparent, transparent);z-index:0">
             
             <!-- ROW 1 -->
             <div class="-row -flex">
@@ -19,14 +19,6 @@
                 <div class="-col-2"></div>
             </div>
             
-            <!-- ROW 2 -->
-            <div class="-row -flex">
-                <div class="-col-2"></div>
-                <div class="-col-8 --row">
-
-                </div>
-                <div class="-col-2"></div>
-            </div>
         </section>
 
     </div>
@@ -56,15 +48,17 @@
                 data.data.json().each(x => MainCourses.push(x));
                 if(!MainCourses.length) return $(".--main-courses")[0].desappear()&&app.error();
                 MainCourses.each((x, i) => {
-                    if(i >= Samples * 2) return;
+                    if(i >= Samples) return;
                     let
                     e = T.prepare(bind({ 
                         IMAGE: API_HOSTNAME + "/var/courses_images/" + x.banner_imagem
                         , NAME: x.banner_nome
                         , TEXT: x.banner_texto
                         , URL: x.banner_url
-                    }, app.color_pallete)).morph()[0].css({ opacity:0 })
-                    $(".--row", Stage)[i >= Samples ? 1 : 0].app(e);
+                    }, app.color_pallete)).morph()[0].css({ opacity:0 }).on("click", function(){
+                        app.error("Ops! Ainda construindo umas coisas legais por aqui...");
+                    })
+                    $(".--row", Stage)[0].app(e);
                 })
             })
         })        

@@ -13,6 +13,7 @@ class _Router_Traits {
 
         /* COMPONENTS */
         , head: "views/components/header.htm"
+        , footer: "views/components/footer.htm"
         , banner: "views/components/banner.htm"
         , searchbar: "views/components/search-bar.htm"
         , categories: "views/components/categories.htm"

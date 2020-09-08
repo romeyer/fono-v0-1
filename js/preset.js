@@ -18,6 +18,7 @@ bootloader.loadComponents.add(function(){
 			
 			Router.load("home").then(nil => {
 				Router.load("head", null, $("#app > header")[0]);
+				Router.load("footer", null, $("#app > footer")[0]);
 				Router.load("banner", null, $(".--banner")[0]);
 				Router.load("searchbar", null, $(".--search-bar")[0]);
 				Router.load("categories", null, $(".--categories")[0]);

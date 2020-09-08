@@ -58,13 +58,15 @@
                         this.stop().anime({ opacity: 1 });
                     }).on("mouseleave", function(){
                         $(".--category-tile").stop().anime({ opacity:1 });
+                    }).on("click", function(){
+                        app.error("ops! construíndo a página busca por categorias... =}")
                     })
                 })
             })
         })
 
-        $(".--categories .--link").at().on("click", NULL => {
-            app.window()
+        $(".--categories .--link").on("click", NULL => {
+            app.error("ops! construíndo pagina institucional... =}")
         })
     </script>
 
