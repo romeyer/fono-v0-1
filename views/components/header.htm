@@ -9,9 +9,9 @@
     </div>
 
     <!-- FLOATING BAR -->
-    <div class="-absolute -col-8 --floating-bar" style="top:4em;left:16.6%;">
-        <img class="-left" style="height:3em;padding:.5em;transform:translateX(8em);margin-top:.25em" src="img/icons/brand/iconw.png"/>
-        <nav class="-right -flex" style="transform:translateX(-8em);padding:.75em 0">
+    <div class="-absolute -col-8 --floating-bar -content-center" style="top:4em;left:50%;transform:translateX(-50%)">
+        <img class="-left" style="height:3em;padding:.5em;transform:translateX(4em);margin-top:.25em" src="img/icons/brand/iconw.png"/>
+        <nav class="-flex" style="padding:.75em 0">
             <span class="-left -only-pointer">HOME</span>
             <span class="-left -only-pointer">QUEM SOMOS</span>
             <span class="-left -only-pointer">COMO FUNCIONA</span>
@@ -19,10 +19,10 @@
             <span class="-left -only-pointer">PÓS-GRADUAÇÃO</span>
             <span class="-left -only-pointer">CONTATO</span>
             <span class="-left -only-pointer">LOGIN</span>
-            <div class="-left -pointer">
-                <span style="padding:.5em 1em;border-radius:2em;background:@STRONG">CADASTRE-SE</span>
-            </div>
         </nav>
+        <div class="-right -pointer" style="margin:1.1em">
+            <span style="padding:.5em 1em;border-radius:2em;background:@STRONG">CADASTRE-SE</span>
+        </div>
     </div>
 
     <!-- STYLESHEET -->
@@ -46,14 +46,14 @@
             el = $("header .--floating-bar")[0]
             ;
             if(window.scrollY < 100){
-                el.stop().anime({ transform: "translateY(0)" })
-                $("img", el)[0].stop().anime({ transform: "translateX(8em)" });//.then(i => i.src = "img/icons/brand/iconw.png")
-                $("div.-pointer", el)[0].stop().anime({ transform: "translateX(0)" })
+                el.stop().anime({ transform: "translate(-50%, 0)" })
+                $("img", el)[0].stop().anime({ transform: "translateX(4em)" });//.then(i => i.src = "img/icons/brand/iconw.png")
+                $("div.-pointer", el)[0].stop().anime({ transform: "translateX(-4em)" })
                 $("header .--fixed-bar .-col-4").stop().anime({ opacity: 1 })
             } else {
-                el.stop().anime({ transform: "translateY(-4.25em)" })
-                $("img", el)[0].stop().anime({ transform: "translateX(4em)" });//.then(i => i.src = "img/logos/logow.png")
-                $("div.-pointer", el)[0].stop().anime({ transform: "translateX(8em)" })
+                el.stop().anime({ transform: "translate(-50%, -4.25em)" })
+                $("img", el)[0].stop().anime({ transform: "translateX(0)" });//.then(i => i.src = "img/logos/logow.png")
+                $("div.-pointer", el)[0].stop().anime({ transform: "translateX(0)" })
                 $("header .--fixed-bar .-col-4").stop().anime({ opacity: 0 })
             }
         })
