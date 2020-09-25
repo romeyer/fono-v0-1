@@ -46,7 +46,7 @@
                 data = data.data.json();
                 data.each(catdata => {
                     let
-                    e = CatTemplate.prepare(bind({
+                    e = CatTemplate.prepare(__bind__({
                         IMAGE: API_HOSTNAME + catdata.image
                         , LABEL: catdata.name
                     }, app.color_pallete))

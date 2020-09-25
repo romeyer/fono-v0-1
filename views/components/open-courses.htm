@@ -47,12 +47,11 @@
         Router.call("opencoursestile").then(T => {
             T = T.data;
             Router.call("opencoursesdata").then(data => {
-                bind(OpenCourses, data.data.json());
-                console.log(OpenCourses);
+               __bind__(OpenCourses, data.data.json());
                 OpenCourses.each((x, i) => {
                     let
                     date = x.content.curso_datainicio.split(/\s/).at().split(/\-/).reverse()
-                    , e = T.prepare(bind({ 
+                    , e = T.prepare(__bind__({ 
                         IMAGE:  x.content.curso_imagem ? API_HOSTNAME + "/var/courses_images/" + x.content.curso_imagem : ""
                         , NAME: x.content.curso_titulo
                         , TEXT: x.content.curso_conteudo

@@ -46,16 +46,17 @@
             T = T.data;
             Router.call("maincoursesdata").then(data => {
                 data.data.json().each(x => MainCourses.push(x));
+                console.log(MainCourses);
                 if(!MainCourses.length) return $(".--main-courses")[0].desappear()&&app.error();
                 MainCourses.each((x, i) => {
                     if(i >= Samples) return;
                     let
-                    e = T.prepare(bind({ 
+                    e = T.prepare(__bind__({ 
                         IMAGE: API_HOSTNAME + "/var/courses_images/" + x.banner_imagem
                         , NAME: x.banner_nome
                         , TEXT: x.banner_texto
                         , URL: x.banner_url
-                    }, app.color_pallete)).morph()[0].css({ opacity:0 }).on("click", function(){
+                    }, app.color_pallete)).morph()[0].on("click", function(){
                         app.error("Ops! Ainda construindo umas coisas legais por aqui...");
                     })
                     $(".--row", Stage)[0].app(e);
