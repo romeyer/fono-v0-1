@@ -1,2 +1,3 @@
-var/logs
+lib/
+**/.log
 webroot/App.php
