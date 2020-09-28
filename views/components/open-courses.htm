@@ -47,11 +47,11 @@
         Router.call("opencoursestile").then(T => {
             T = T.data;
             Router.call("opencoursesdata").then(data => {
-               __bind__(OpenCourses, data.data.json());
+               _Bind(OpenCourses, data.data.json());
                 OpenCourses.each((x, i) => {
                     let
                     date = x.content.curso_datainicio.split(/\s/).at().split(/\-/).reverse()
-                    , e = T.prepare(__bind__({ 
+                    , e = T.prepare(_Bind({ 
                         IMAGE:  x.content.curso_imagem ? API_HOSTNAME + "/var/courses_images/" + x.content.curso_imagem : ""
                         , NAME: x.content.curso_titulo
                         , TEXT: x.content.curso_conteudo
@@ -60,7 +60,11 @@
                         , MONTHTEXT: date.join("/")
                         , MONTHCOLOR: "@STRONG"//app.prism.extract(x=>x.content)[date[1]*1]
                     }, app.color_pallete)).morph()[0].on("click", function(){
-                        app.error("ops! construíndo a página de cada curso... =}")
+                        const
+                        checkCoursePopup = NULL => {
+
+                        };
+                        app.window("<pre>" + x.content.json() + "</pre>");
                     })
                     OCStage.app(e);
                 });

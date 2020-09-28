@@ -32,7 +32,7 @@
                 data = data.data.json();
                 data.each(bannerdata => {
                     let
-                    e = BannerTemplate.prepare(__bind__({
+                    e = BannerTemplate.prepare(_Bind({
                         BANNERCOVER: API_HOSTNAME + bannerdata.image 
                         , SUBTITLE: bannerdata.subtitle || "subtitle"
                         , MAINTITLE: bannerdata.maintitle || "main title"

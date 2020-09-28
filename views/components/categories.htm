@@ -35,9 +35,10 @@
             $(".--category-tile").each((x, i) => {
                 x.anime({ transition:"opacity(1)", transform:"translateY(0)" }, ANIMATION_LENGTH, ANIMATION_LENGTH/8*i);
                 ScrollPool.drop(CategoriesScrollAction);
-            });
+            })
         }
-        ;
+        ;;
+
         ScrollPool.add(CategoriesScrollAction);
 
         Router.call("categorytile").then(T => {
@@ -46,7 +47,7 @@
                 data = data.data.json();
                 data.each(catdata => {
                     let
-                    e = CatTemplate.prepare(__bind__({
+                    e = CatTemplate.prepare(_Bind({
                         IMAGE: API_HOSTNAME + catdata.image
                         , LABEL: catdata.name
                     }, app.color_pallete))
@@ -65,9 +66,9 @@
             })
         })
 
-        $(".--categories .--link").on("click", NULL => {
-            app.error("ops! construíndo pagina institucional... =}")
-        })
+
+
+        $(".--categories .--link").on("click", NULL => app.pragma = HOWDOESITWORKS);
     </script>
 
 </template>

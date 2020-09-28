@@ -1,7 +1,30 @@
 const
 ScrollPool = new Pool()
 , ScrollHandler = new Throttle(NULL => ScrollPool.fire(), 100)
+, checkPragma = function(PragmaIndex){
+	const
+	o = new Promise(function(ok){
+		if(app.components[PragmaIndex]) return ok(app.components[PragmaIndex]);
+		else {
+			Router.call(PragmaIndex).then(Pragma => {
+				app.components[PragmaIndex] = Pragma.data;
+				return ok(app.components[PragmaIndex])
+			})
+		}
+	});
+	return o;
+}
 ;
+
+Router._Routes[WHOWEARE] 		= "views/components/whoweare.htm";
+Router._Routes[HOWDOESITWORKS] 	= "views/components/faq.htm";
+Router._Routes[POINTS]			= "views/components/points.htm";
+Router._Routes[COURSES] 		= "";
+Router._Routes[POSTDEGREE] 		= "";
+Router._Routes[VIDEOCLASSES] 	= "";
+Router._Routes[CONTACT] 		= "";
+Router._Routes[LOGIN] 			= "";
+Router._Routes[SIGNUP] 			= "";
 
 app.hash = app.storage("hash") || null;
 app.initial_pragma = START;
@@ -14,7 +37,7 @@ bootloader.loadComponents.add(function(){
 	setTimeout(NULL => {
 		Router.call("theme").then(theme => {
 			theme = theme.data.json();
-			if(theme) __bind__(app.color_pallete, theme);
+			if(theme) _Bind(app.color_pallete, theme);
 			
 			Router.load("home").then(nil => {
 				Router.load("head", null, $("#app > header")[0]);
@@ -43,10 +66,26 @@ app.initPool.add(nil => {
 });
 
 app.onPragmaChange.add(x => {
+	//app.loading(true);
+	var
+	StringPragmaPage;
+
+	$('.--hintifyied,.--hintifyied-sp').desappear(AL, true);
+
 	switch (x) {
-		case START: 		/**/ 
-		;
-		break;
+		case START: 		
+			window.scroll({ top:0, behavior:'smooth' })
+			//app.loading(false);
+		; break;
+		default: {
+			// window.scroll({ top:1024, behavior:'smooth' })
+			checkPragma(x).then(Page => {
+				StringPragmaPage = Page.prepare(app.color_pallete).morph();
+				app.window(StringPragmaPage);
+				StringPragmaPage.evalute();
+				//app.loading(false);
+			})
+		}
 	}
 });
 

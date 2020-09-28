@@ -6,7 +6,7 @@ class _Router_Traits {
      *
      *
      */
-    _Routes_ = {
+    _Routes = {
 
         /* VIEW */
         home: "views/home.htm"
@@ -44,18 +44,18 @@ class _Router_Traits {
      *
      */
     async load(name, args=null, container=null, bind = null){
-        if(this._Routes_[name]) name = this._Routes_[name];
+        if(this._Routes[name]) name = this._Routes[name];
         if(!container) container = $("#app").at();
         return app.load(name, args, container, bind)
     }
 
     async call(name, args=null){
-        if(this._Routes_[name]) name = this._Routes_[name];
+        if(this._Routes[name]) name = this._Routes[name];
         return app.call(name, args)
     }
 
     async post(name, args=null){
-        if(this._Routes_[name]) name = this._Routes_[name];
+        if(this._Routes[name]) name = this._Routes[name];
         return app.post(name, args)
     }
 
