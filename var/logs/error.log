@@ -118,3 +118,7 @@ Stack trace:
 #0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
 #1 {main}
   thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api"
+2020/09/28 14:26:56 [error] 322#322: *245 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method Home::howeare() in /mnt/d/http/fono/api/index.php:28
+Stack trace:
+#0 {main}
+  thrown in /mnt/d/http/fono/api/index.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /home/howeare HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api"
