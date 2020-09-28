@@ -1,3 +1,5 @@
+app.cook("SameSite", "Lax", 365)
+
 const
 ScrollPool = new Pool()
 , ScrollHandler = new Throttle(NULL => ScrollPool.fire(), 100)
