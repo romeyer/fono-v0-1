@@ -47,8 +47,9 @@
         Router.call("opencoursestile").then(T => {
             T = T.data;
             Router.call("opencoursesdata").then(data => {
-               _Bind(OpenCourses, data.data.json());
+                //console.log(data.data);
                 OpenCourses.each((x, i) => {
+                    console.log(x.content);
                     let
                     date = x.content.curso_datainicio.split(/\s/).at().split(/\-/).reverse()
                     , e = T.prepare(_Bind({ 

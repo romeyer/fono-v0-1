@@ -30,6 +30,10 @@ class _Router_Traits {
 
         /* API CALLS */
         , theme: API_PREFIX + "themes/get/fono"
+        , mailcheck: API_PREFIX + "auth/mailcheck"
+        , signup: API_PREFIX + "sign/up"
+        
+        /* LEGACY CALLS */
         , bannerdata: API_PREFIX + "home/banners"
         , categoriesdata: API_PREFIX + "home/categories"
         , opencoursesdata: API_PREFIX + "home/opencourses"
@@ -49,11 +53,11 @@ class _Router_Traits {
         return app.load(name, args, container, bind)
     }
 
-    async call(name, args=null){
+    async call(name, args=null, method="GET"){
         if(this._Routes[name]) name = this._Routes[name];
-        return app.call(name, args)
+        return app.call(name, args, method)
     }
-
+    
     async post(name, args=null){
         if(this._Routes[name]) name = this._Routes[name];
         return app.post(name, args)

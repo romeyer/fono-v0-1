@@ -26,7 +26,7 @@ Router._Routes[POSTDEGREE] 		= "";
 Router._Routes[VIDEOCLASSES] 	= "";
 Router._Routes[CONTACT] 		= "";
 Router._Routes[LOGIN] 			= "";
-Router._Routes[SIGNUP] 			= "";
+Router._Routes[SIGNUP] 			= "views/components/signup.htm";
 
 app.hash = app.storage("hash") || null;
 app.initial_pragma = START;

@@ -1,0 +1,321 @@
+<template>
+    <div id="signup" class="-row" style="background:@FOREGROUND;padding-bottom:15vh">
+        <div class="-row" style="height:35vh; background-image:url(img/img_bg_2.jpg);background-size:cover;background-position: center center"></div>
+        <div class="-col-8 -content-center" style="margin:-20vh 0 10vh 16.6%;background:@BACKGROUND">
+            <!-- TITLE -->
+            <div class="-row -content-center" style="padding:4em 0">
+                <b style="font-size:4em;opacity:.05">CADASTRO</b></br>
+                <div class="-roboto-bold" style="font-size:1.5em; transform:translateY(-1.5em);color:@SPAN">CADASTRO</div>
+            </div>
+            <form class="-relative -row" style="padding:0 2em" action="javascript:void(0)" onsubmit="window.signUp(this.json())">
+                
+                <!-- PAGER 1 -->
+                <div class="-wrapper --pager">
+                    <div class="-row -content-center" style="padding:0 0 2em;color:@SPAN"><b>INFORMAÇÕES DE ACESSO</b></div>
+                    <!-- EMAIL -->
+                    <div class="-row -flex">
+                        <div class="-col-4"></div>
+                        <div class="-relative -col-4">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">E-MAIL</label>
+                            <input type="email" name="mail" placeholder="seuemail@provedor.com.br" required/>
+                        </div>
+                        <div class="-col-4"></div>
+                    </div>
+                    <!-- PASSWORDS -->
+                    <div class="-row -flex" style="margin-top:2em">
+                        <div class="-col-4"></div>
+                        <div class="-relative -col-4">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">SENHA</label>
+                            <input type="password" name="pass" required class="-hash" />
+                        </div>
+                        <div class="-col-4"></div>
+                    </div>
+                    <div class="-row -flex" style="margin-top:.5em">
+                        <div class="-col-4"></div>
+                        <div class="-relative -col-4">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">CONFIRMAR SENHA</label>
+                            <input type="password" name="passcheck" class="-hash" required/>
+                        </div>
+                        <div class="-col-4"></div>
+                    </div>
+                    <!-- NAVIGATOR -->
+                    <div class="-row -flex" style="margin:4em 0">
+                        <div class="-row -pointer -content-right" onclick="window.checkMailNPassword()">
+                            <img class="-right" style="height:3em;margin-right:4em" src="img/icons/play.svg"/>
+                            <div class="-right" style="font-size:1.75em;color:@FONT88;padding:.25em .5em">PRÓXIMO</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAGER 2 -->
+                <div class="-wrapper --pager">
+                    
+                    <div class="-row -content-center" style="padding:0 0 2em;color:@SPAN"><b>DADOS PESSOAIS</b></div>
+                    <div class="-row -flex">
+                        <!--PADDING-->
+                        <div class="-col-3"></div>
+                        <!-- CPF -->
+                        <div class="-relative -col-3">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">CPF</label>
+                            <input type="text" name="cpf" placeholder="000.000.000-00" required onkeyup="
+                                let
+                                tmp = this.value.replace(/[^0-9]/g, '');
+                                this.value = [tmp.substr(0,3), '.', tmp.length>3?tmp.substr(3,3):'', '.', tmp.length>6?tmp.substr(6,3):'', '-', tmp.length>9?tmp.substr(9,2):''].join('')
+                            "/>
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-1"></div>
+                        <!-- RG -->
+                        <div class="-relative -col-3">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">RG</label>
+                            <input type="text" name="rg" placeholder="00.000.000-0" onkeyup="
+                                let
+                                tmp = this.value.replace(/[^0-9]/g, '');
+                                this.value = [tmp.substr(0,2), '.', tmp.length>2?tmp.substr(2,3):'', '.', tmp.length>5?tmp.substr(5,3):'', '-', tmp.length>8?tmp.substr(8,2):''].join('')
+                            "/>
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-2"></div>
+                    </div>
+                    <div class="-row -flex" style="margin-top:2em">
+                        <!--PADDING-->
+                        <div class="-col-3"></div>
+                        <!-- BORNDATE -->
+                        <div class="-relative -col-2">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">DATA DE NASCIMENTO</label>
+                            <input type="date" name="born" required/>
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-2"></div>
+                        <!-- JOB -->
+                        <div class="-relative -col-3">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">PROFISSÃO</label>
+                            <input type="text" name="job" maxlength="96" required placeholder="Fonoaudióloga(o)"/>
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-2"></div>
+                    </div>
+                    
+                    <div class="-row -content-center" style="padding:4em 0 2em;color:@SPAN"><b>INFORMAÇÕES DE CONTATO</b></div>
+                    <div class="-row -flex">
+                        <!--PADDING-->
+                        <div class="-col-3"></div>
+                        <!-- PHONE -->
+                        <div class="-relative -col-3">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">TELEFONE</label>
+                            <input type="phone" name="phone" placeholder="(00)0000-0000" onkeyup="
+                                let
+                                tmp = this.value.replace(/[^0-9]/g, '');
+                                this.value = ['(', tmp.substr(0,2), ')', tmp.length>2?tmp.substr(2,4):'', '-', tmp.length>6?tmp.substr(6,4):''].join('')
+                            "/>
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-1"></div>
+                        <!-- CELL -->
+                        <div class="-relative -col-3">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">CELULAR</label>
+                            <input type="phone" name="cell" placeholder="(00)0.0000-0000" required onkeyup="
+                                let
+                                tmp = this.value.replace(/[^0-9]/g, '');
+                                this.value = ['(', tmp.substr(0,2), ')', tmp.length>2?tmp.substr(2,1):'', '.', tmp.length>3?tmp.substr(3,4):'', '-', tmp.length>7?tmp.substr(7,4):''].join('')
+                            "/>
+                        </div>
+                        <!----><div class="-col-2"></div>
+                    </div>
+                    <div class="-row -flex" style="margin-top:2em">
+                        <!--PADDING-->
+                        <div class="-col-3"></div>
+                        <!-- CEP -->
+                        <div class="-relative -col-2">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">CEP</label>
+                            <input type="text" name="cep" required  onkeyup="
+                                let
+                                tmp = this.value.replace(/[^0-9]/g, '');
+                                this.value = [ tmp.substr(0,2), '.', tmp.length>2?tmp.substr(2,3):'', '-', tmp.length>5?tmp.substr(5,3):'' ].join('')
+                            " onchange="
+                                let
+                                tmp = this.value.replace(/[^0-9]/gi, '');
+                                if(tmp.length != 8) app.error('O CEP parece não estar correto.');
+                                else {
+                                    window.app.call('https://viacep.com.br/ws/'+tmp+'/json/unicode/').then(x=>{
+                                        x = x.data.json();
+                                        const
+                                        el = $('#signup form')[0];
+                                        if(x.logradouro) el.get('input[name=\'address\']')[0].value = x.logradouro;
+                                        if(x.bairro) el.get('input[name=\'ngbr\']')[0].value = x.bairro;
+                                        if(x.localidade) el.get('input[name=\'city\']')[0].value = x.localidade;
+                                        if(x.uf) el.get('input[name=\'state\']')[0].value = x.uf;
+                                    });
+                                }
+                            "/>
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-7"></div>
+                    </div>
+                    <div class="-row -flex" style="margin-top:2em">
+                        <!--PADDING-->
+                        <div class="-col-3"></div>
+                        <!-- ADDRESS -->
+                        <div class="-relative -col-4">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">ENDEREÇO</label>
+                            <input type="text" name="address" required/>
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-1"></div>
+                        <!-- CELL -->
+                        <div class="-relative -col-2">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">NÚMERO</label>
+                            <input type="text" name="address_number" required/>
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-2"></div>
+                    </div>
+                    <div class="-row -flex" style="margin-top:2em">
+                        <!--PADDING-->
+                        <div class="-col-3"></div>
+                        <!-- LINE 2 -->
+                        <div class="-relative -col-7">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">COMPLEMENTO</label>
+                            <input type="text" name="address_line2"/>
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-2"></div>
+                    </div>
+                    <div class="-row -flex" style="margin-top:2em">
+                        <!--PADDING-->
+                        <div class="-col-3"></div>
+                        <!-- NEIGHBORHOOD -->
+                        <div class="-relative -col-3">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">BAIRRO</label>
+                            <input type="text" name="ngbr"/>
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-1"></div>
+                        <!-- CITY -->
+                        <div class="-relative -col-3">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">CIDADE</label>
+                            <input type="text" name="city" required/>
+                        </div>
+                        <div class="-col-2"></div>
+                    </div>
+                    <div class="-row -flex" style="margin-top:2em">
+                        <!--PADDING-->
+                        <div class="-col-8"></div>    
+                        <!-- STATE -->
+                        <div class="-relative -col-2">
+                            <label class="-absolute -zero" style="padding:.5em;transform:translateX(-100%);left:-.5em;color:@FONT88">UF</label>
+                            <input type="text" name="state" required/>
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-2"></div>
+                    </div>
+                    <div class="-row -flex" style="margin-top:2em">
+                        <!--PADDING-->
+                        <div class="-col-3"></div>
+                        <div class="-col-6 -content-right">Ao concluir meu cadastro, eu afirmo que li e concordo com os <b class='-pointer' style="color:@SPAN" onclick="window.app.working('Implementar o popup das politicas')">termos e políticas</b> da fonoaudiálogo</div>
+                        <!-- STATE -->
+                        <div class="-relative -col-1 -pointer -value -content-center" data-name='policy_accepted' data-value="0" onclick="
+                            this.dataset.value = (this.dataset.value*1+1)%2;
+                            if(this.dataset.value*1){
+                                this.get('img')[0].style.display = 'none';
+                                this.get('img')[1].style.display = 'block';
+                            }else{
+                                this.get('img')[1].style.display = 'none';
+                                this.get('img')[0].style.display = 'block';
+                            }
+                            console.log(this.dataset.value);
+                        ">
+                            <img src="img/switch-off.svg" class="-right" style="height:2em;display:block;">
+                            <img src="img/switch-on.svg" class="-right" style="height:2em;display:none">
+                        </div>
+                        <!--PADDING-->
+                        <div class="-col-2"></div>
+                    </div>
+                    <!-- NAVIGATOR -->
+                    <div class="-row -flex" style="margin:4em 0">
+                        <div class="-row -pointer -content-right" onclick="this.get('input')[0].click()">
+                            <img class="-right" style="height:3em;margin-right:4em;transform:rotate(90deg)" src="img/icons/play.svg"/>
+                            <div class="-right" style="font-size:1.75em;color:@FONT88;padding:.25em .5em">SALVAR</div>
+                            <input type="submit" style="display:none"/>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <style>
+        #signup form input, #signup form textarea, #signup form select
+        {
+            width:100%;
+            padding:.5em 1em;
+            font-size: 1em;
+            background:@BACKGROUND;
+            border: 1px solid @DARK3;
+            border-radius: .25em;
+            text-align:left;
+            color:@FONT;
+            font-weight:bolder;
+        }
+
+        #signup .--pager
+        {
+            transform:translateX(100%);
+            filter: opacity(0);
+            display:none;
+        }
+        #signup .--pager:nth-child(1)
+        {
+            display: block;
+            transform:translateX(0);
+            filter: opacity(1);
+        }
+    </style>
+    <script>
+        Router.call("js/cpfvalidator.js").then(x => eval(x.data));
+        _Bind(window, {
+            checkMail: function(){
+                const
+                form = $("#signup form")[0].json();
+                if(!form.mail || form.mail.indexOf("@")==-1){
+                    app.error("Favor inserir um e-mail válido antes de prosseguir.");
+                    return $("#signup input[type='email']")[0].val("").focus()
+                }
+                return Router.post("mailcheck", form);
+            }
+            , checkMailNPassword: () => {
+                checkMail().then(x => {
+                    if(x.data*1==0){
+                        const
+                        form = $("#signup form")[0].json();
+                        if(form.pass && form.pass == form.passcheck){
+                            $("#signup .--pager")[0].anime({ transform:"translateX(-100%)", filter:"opacity(0)" }).then(x => {
+                                x.css({ display:"none" })
+                                $("#signup .--pager")[1].css({ display:"block", filter:"opacity(0)", transform:"translateX(100%)" }).anime({ transform:"translateX(0)", filter:"opacity(1)" }, AL, AL+10);
+                            });
+                        }else{
+                            app.error("Ops! Senhas não conferem...");
+                            $("#signup input[type='password']").each(p => p.value="")[0].focus();
+                        }
+                    }else{
+                        app.warning("Email já vinculado a uma conta, caso tenha esquecido sua senha, tente redefini-la na sessão login.");
+                        return $("#signup input[type='email']")[0].val("").focus()
+                    }
+                })
+            }
+            , signUp: form => {
+                if(!(form.policy_accepted*1)) return app.error("É necessário aceitar as politicas da Fonoaudiálogo para se cadastrar em nossa base e começar a usufruir de nossos serviços.");
+                Router.post("signup", form).then(x => {
+                    if(x.data.length == 32){
+                        app.storage("hash", x.data);
+                        app.hash= x.data;
+                        app.success("Usuário gravado com sucesso!");
+                        $("#signup")[0].upFind("toast").desappear(AL, 1);
+                    }else{  
+                        app.error("Ops! Algo deu errado.. por gentileza tente novamente mais tarde... código do erro: " + x.data);
+                    }
+                });
+            }
+        })
+    </script>
+</template>
