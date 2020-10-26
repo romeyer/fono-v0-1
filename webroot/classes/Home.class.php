@@ -20,6 +20,7 @@ class Home extends Page {
     public function opencourses(){
         // echo date("Y-m-d"); die;
         $obj = Mysql::connect()->select()->from("fono_curso")->where("curso_inativo=FALSE")->query();
+        //print_r($obj); die;
         $date = date("Ymd")*1;
         $final = [];
         Vector::each($obj, function($o) use($date, &$final){
@@ -28,7 +29,7 @@ class Home extends Page {
         });
         // $obj = array_slice($obj, sizeof($obj)-2, 2);//array_merge(array_slice($obj, sizeof($obj)-2, 2), array_slice($obj, 2));
         $iter=0;
-        while(sizeof($final)<5) $final[] = $final[$iter++];
+        if(sizeof($final)) while(sizeof($final)<5) $final[] = $final[$iter++%sizeof($final)];
         return Convert::json($final);
     }
 

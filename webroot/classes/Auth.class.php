@@ -1,19 +1,12 @@
 <?php
-class Auth extends Page {
+class Auth extends Activity {
 	
-	protected function before()
+	public function mailcheck()
 	{
-		$this->view(false); 
-	}
-
-	protected function result()
-	{
-		echo $this->help(); 
-	}
-
-	public function help()
-	{
-		return "hooray... auth mod for spume app";
+		$args = Convert::atoo(Request::in());
+		// echo "<pre>"; print_r($args); die;
+		if(!isset($args->mail)) return Core::Response(-1, "No mail given");
+		return Mysql::connect("fonov2")->exists("users", "mail='".$args->mail."' AND status!=0");
 	}
 
 	public function allow(String $hash=null)
@@ -26,11 +19,10 @@ class Auth extends Page {
 
 	public function exchangeKeys(String $hash=null)
 	{
-		header('Access-Control-Allow-Origin: *');
 		if(!$hash) $hash = Request::in("hash");
 		if(!$hash) return 0;
 		$args = json_decode(base64_decode($hash));
-		$user = Mysql::connect("dash")
+		$user = Mysql::connect("fono")
 			->select()
 			->from(["users"])
 			->where("email='".$args->user."' AND active='1'")

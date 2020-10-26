@@ -1,124 +1,892 @@
-2020/09/24 23:24:06 [crit] 12625#12625: *16 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:24:10 [crit] 12625#12625: *19 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:24:10 [crit] 12625#12625: *19 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/banners HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:24:10 [crit] 12625#12625: *19 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:24:10 [crit] 12625#12625: *19 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/categories HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:24:10 [crit] 12625#12625: *19 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:24:12 [crit] 12625#12625: *16 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:25 [crit] 12625#12625: *27 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:26 [crit] 12625#12625: *27 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:26 [crit] 12625#12625: *27 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:26 [crit] 12625#12625: *27 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:26 [crit] 12625#12625: *27 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:27 [crit] 12625#12625: *27 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:27 [crit] 12625#12625: *27 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:27 [crit] 12625#12625: *27 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:27 [crit] 12625#12625: *27 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:27 [crit] 12625#12625: *27 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:27 [crit] 12625#12625: *27 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:42 [crit] 13519#13519: *2 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:31:45 [crit] 13519#13519: *11 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:31:45 [crit] 13519#13519: *11 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:31:45 [crit] 13519#13519: *11 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/banners HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:31:45 [crit] 13519#13519: *11 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/categories HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:31:45 [crit] 13519#13519: *11 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:31:48 [crit] 13519#13519: *2 connect() to unix:/run/php-fpm/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 127.0.0.1, server: api, request: "GET /?_=themes/get/fono HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "api"
-2020/09/24 23:33:17 [error] 13666#13666: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:22
+2020/10/23 17:48:35 [error] 2957#2957: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'mysqli' not found in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php:118
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
+#0 /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php(22): Mysql::connect()
+#1 /mnt/d/http/fono/api-rolling/index.php(28): Home->opencourses()
+#2 {main}
+  thrown in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 118" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api"
+2020/10/23 17:50:42 [error] 2957#2957: *45 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 32PHP message: PHP Notice:  Undefined offset: 1 in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 32PHP message: PHP Notice:  Undefined offset: 2 in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 32PHP message: PHP Notice:  Undefined offset: 3 in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 32PHP message: PHP Notice:  Undefined offset: 4 in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 32" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api"
+2020/10/23 18:24:27 [error] 2957#2957: *63 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 32PHP message: PHP Notice:  Undefined offset: 1 in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 32PHP message: PHP Notice:  Undefined offset: 2 in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 32PHP message: PHP Notice:  Undefined offset: 3 in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 32PHP message: PHP Notice:  Undefined offset: 4 in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 32" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api"
+2020/10/23 18:25:16 [error] 2957#2957: *63 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught DivisionByZeroError: Modulo by zero in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:32
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(28): Home->opencourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:33:17 [error] 13666#13666: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:36
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 32" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api"
+2020/10/25 14:37:47 [error] 59#59: *24 FastCGI sent in stderr: "PHP message: PHP Warning:  Use of undefined constant DEBUG - assumed 'DEBUG' (this will throw an Error in a future version of PHP) in /mnt/d/http/fono/api-rolling/lib/php/Core.class.php on line 31" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "OPTIONS /auth/mailcheck HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:37:47 [error] 59#59: *24 FastCGI sent in stderr: "PHP message: PHP Warning:  Use of undefined constant DEBUG - assumed 'DEBUG' (this will throw an Error in a future version of PHP) in /mnt/d/http/fono/api-rolling/lib/php/Core.class.php on line 31" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /auth/mailcheck HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:41:38 [error] 59#59: *24 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->maincourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:33:28 [error] 13666#13666: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:22
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:41:38 [error] 59#59: *24 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:33:28 [error] 13666#13666: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:36
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:41:54 [error] 59#59: *24 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->maincourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:34:36 [error] 13666#13666: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:22
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:41:54 [error] 59#59: *24 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:34:36 [error] 13666#13666: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:36
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:46:35 [error] 59#59: *49 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->maincourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:35:06 [error] 13666#13666: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:36
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:46:35 [error] 59#59: *49 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->maincourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:35:06 [error] 13666#13666: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:22
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:47:38 [error] 59#59: *49 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:36:16 [error] 13666#13666: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:22
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:47:38 [error] 59#59: *49 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:36:16 [error] 13666#13666: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:36
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:52:23 [error] 59#59: *66 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->maincourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:36:23 [error] 13666#13666: *2 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:22
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:52:23 [error] 59#59: *66 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api"
-2020/09/24 23:36:26 [error] 13666#13666: *2 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:22
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:53:07 [error] 59#59: *66 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api"
-2020/09/24 23:43:25 [error] 13666#13666: *59 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:36
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:53:08 [error] 59#59: *66 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->maincourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:43:25 [error] 13666#13666: *59 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:22
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:53:54 [error] 59#59: *66 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:44:26 [error] 13666#13666: *59 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:22
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:53:55 [error] 59#59: *66 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:44:26 [error] 13666#13666: *59 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:36
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:55:37 [error] 59#59: *66 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->maincourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:45:47 [error] 13666#13666: *59 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:22
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 14:55:37 [error] 59#59: *66 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:45:47 [error] 13666#13666: *59 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:36
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:02:02 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function exists() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php:10
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->maincourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Auth->mailcheck()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api", referrer: "http://localhost/"
-2020/09/24 23:46:03 [error] 13669#13669: *72 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api/webroot/classes/Home.class.php:22
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /auth/mailcheck HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:04:03 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function exists() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php:10
 Stack trace:
-#0 /mnt/d/http/fono/api/index.php(28): Home->opencourses()
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Auth->mailcheck()
 #1 {main}
-  thrown in /mnt/d/http/fono/api/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /?_=home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api"
-2020/09/28 14:26:56 [error] 322#322: *245 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method Home::howeare() in /mnt/d/http/fono/api/index.php:28
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /auth/mailcheck HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:04:50 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function exists() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php:10
 Stack trace:
-#0 {main}
-  thrown in /mnt/d/http/fono/api/index.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: api, request: "GET /home/howeare HTTP/2.0", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "api"
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Auth->mailcheck()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /auth/mailcheck HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:04:55 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:04:55 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:05:02 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: datasourse in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 30PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function exists() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php:10
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Auth->mailcheck()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /auth/mailcheck HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:05:23 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function exists() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php:10
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Auth->mailcheck()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /auth/mailcheck HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:07:13 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php:32
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php(115): Application::connections()
+#1 /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php(10): Mysql::connect()
+#2 /mnt/d/http/fono/api-rolling/index.php(27): Auth->mailcheck()
+#3 {main}
+  thrown in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 32" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /auth/mailcheck HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:07:54 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:07:54 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:07:58 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function exists() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php:10
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Auth->mailcheck()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /auth/mailcheck HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:10:39 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: username in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 33PHP message: PHP Notice:  Undefined index: passwd in /mnt/d/http/fono/api-rolling/lib/php/Application.class.php on line 34" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /auth/mailcheck HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:11:54 [error] 59#59: *105 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function exists() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php:10
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Auth->mailcheck()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Auth.class.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /auth/mailcheck HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:17:27 [error] 59#59: *166 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:17:27 [error] 59#59: *166 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:18:19 [error] 59#59: *166 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:18:19 [error] 59#59: *166 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:18:46 [error] 59#59: *166 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:18:46 [error] 59#59: *166 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:19:08 [error] 59#59: *166 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:19:08 [error] 59#59: *166 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:25:23 [error] 59#59: *207 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:25:23 [error] 59#59: *207 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:26:24 [error] 59#59: *207 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:26:24 [error] 59#59: *207 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:31:51 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:31:51 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:32:32 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:32:33 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:35:04 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:35:04 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:35:30 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:35:30 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:35:56 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:35:56 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:36:19 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:36:19 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:36:34 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:36:34 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:36:58 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:36:58 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:37:24 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:37:24 [error] 59#59: *240 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:49:34 [error] 59#59: *302 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:49:34 [error] 59#59: *302 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:51:42 [error] 59#59: *302 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:51:42 [error] 59#59: *302 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:52:06 [error] 59#59: *302 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:52:06 [error] 59#59: *302 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:53:25 [error] 59#59: *302 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:53:25 [error] 59#59: *302 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:55:54 [error] 59#59: *302 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 15:55:55 [error] 59#59: *302 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:22:34 [error] 59#59: *350 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:22:34 [error] 59#59: *350 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:23:51 [error] 59#59: *350 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:23:51 [error] 59#59: *350 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:25:05 [error] 59#59: *350 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:25:05 [error] 59#59: *350 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:38:03 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:38:03 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:39:21 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:39:21 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:40:26 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:40:26 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:40:47 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:40:47 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:41:25 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:41:25 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:42:16 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:42:16 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:44:52 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:44:52 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:45:18 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:45:18 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:46:10 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:46:10 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:46:40 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:46:40 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:48:13 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:48:13 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:48:30 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:48:30 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:48:53 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:48:54 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:49:08 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:49:09 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:51:56 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:51:56 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:53:26 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:53:26 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:55:26 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:55:26 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:56:18 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:56:18 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:56:39 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 16:56:39 [error] 59#59: *384 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:07:34 [error] 59#59: *526 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:07:34 [error] 59#59: *526 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:08:27 [error] 59#59: *526 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:08:27 [error] 59#59: *526 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:16:54 [error] 59#59: *549 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:16:54 [error] 59#59: *549 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:19:41 [error] 59#59: *549 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:19:41 [error] 59#59: *549 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:25:37 [error] 59#59: *568 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:25:38 [error] 59#59: *568 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:31:05 [error] 59#59: *588 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:31:05 [error] 59#59: *588 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:31:27 [error] 59#59: *588 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:31:27 [error] 59#59: *588 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:34:33 [error] 59#59: *588 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:34:33 [error] 59#59: *588 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:35:09 [error] 59#59: *588 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:35:09 [error] 59#59: *588 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:41:06 [error] 59#59: *632 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:41:06 [error] 59#59: *632 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:41:47 [error] 59#59: *632 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:41:47 [error] 59#59: *632 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:54:15 [error] 59#59: *651 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:54:15 [error] 59#59: *651 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:58:54 [error] 59#59: *685 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 17:58:54 [error] 59#59: *685 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:21:19 [error] 59#59: *699 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:21:19 [error] 59#59: *699 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:22:11 [error] 59#59: *699 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:22:11 [error] 59#59: *699 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:29:30 [error] 59#59: *720 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:29:31 [error] 59#59: *720 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:33:50 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:33:51 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:34:31 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:34:31 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:35:20 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:35:20 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:36:36 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:36:36 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:37:35 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:37:35 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:38:39 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:38:39 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:39:54 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:39:54 [error] 59#59: *734 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:43:03 [error] 59#59: *788 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:43:03 [error] 59#59: *788 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:46:41 [error] 59#59: *802 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:46:41 [error] 59#59: *802 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:50:08 [error] 59#59: *816 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:50:08 [error] 59#59: *816 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:53:28 [error] 59#59: *830 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 18:53:28 [error] 59#59: *830 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 19:43:26 [error] 59#59: *844 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 19:43:26 [error] 59#59: *844 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 122PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 20:16:46 [error] 59#59: *860 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: stdClass::$uuid in /mnt/d/http/fono/api-rolling/webroot/classes/Sign.class.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /sign/up HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 20:31:20 [error] 59#59: *875 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ')' in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 104" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "OPTIONS /sign/up HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 20:31:20 [error] 59#59: *875 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ')' in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 104" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /sign/up HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 20:52:02 [error] 59#59: *879 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: attributes in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 56PHP message: PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "POST /sign/up HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 22:02:25 [error] 59#59: *985 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 166PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 22:02:26 [error] 59#59: *985 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 166PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 22:02:59 [error] 59#59: *985 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 166PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 22:02:59 [error] 59#59: *985 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 166PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 22:07:20 [error] 59#59: *1012 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 166PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:22
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->opencourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/opencourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"
+2020/10/25 22:07:21 [error] 59#59: *1012 FastCGI sent in stderr: "PHP message: PHP Warning:  Mysql::connect(): Couldn't fetch mysqli in /mnt/d/http/fono/api-rolling/lib/php/Mysql.class.php on line 166PHP message: PHP Fatal error:  Uncaught Error: Call to a member function select() on int in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php:37
+Stack trace:
+#0 /mnt/d/http/fono/api-rolling/index.php(27): Home->maincourses()
+#1 {main}
+  thrown in /mnt/d/http/fono/api-rolling/webroot/classes/Home.class.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: fono.api, request: "GET /home/maincourses HTTP/2.0", upstream: "fastcgi://unix:/run/php-fpm/php-fpm.sock:", host: "fono.api", referrer: "https://fono.web/"

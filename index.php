@@ -1,10 +1,9 @@
 <?php
- header("Access-Control-Allow-Origin: *");
-// header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 // header('Content-type: text/html; charset=utf-8');
-// header('Content-type: application/json; charset=utf-8');
-// header('Content-type: text/plain; charset=utf-8');
+header('Content-type: application/json; charset=utf-8');
+header('Content-type: text/plain; charset=utf-8');
 
 @session_start();
 
@@ -14,7 +13,7 @@ require "webroot" . DS . "App.php";
 
 if(!User::logged() && Request::cook("USER") && Request::cook("ACTIVE")) Request::sess("USER",Request::cook("USER"));
 
-$args = Request::in("_");
+$args = Request::get("_");
 if($args)
 {   
     if(substr($args, 0, 1)==DS) $args = substr($args, 1);
@@ -24,8 +23,9 @@ if($args)
     
     try
     {
-       $class_instance = new $class_name();
+        $class_instance = new $class_name();
         echo $class_instance->$method_name(...array_slice($args,2));
+        // echo "<pre>";print_r(Request::in());
    }
     catch (Exception $e)
     {
